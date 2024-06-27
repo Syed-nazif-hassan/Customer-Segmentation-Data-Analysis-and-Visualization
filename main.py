@@ -150,4 +150,4 @@ if not os.path.exists(custom_ecommerce_purchases_file_path):
 else:
     with pd.ExcelWriter(custom_ecommerce_purchases_file_path, engine='openpyxl', mode='a', if_sheet_exists='replace') as writer:
         df.to_excel(
-            writer, sheet_name='Company_Spender_Type_Counts', index=False)
+            writer, sheet_name='Custom_Ecommerce_Purchases', index=False)
